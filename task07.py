@@ -1,12 +1,11 @@
-parol = 'salom123'
+num = int(input(f'ball 1: '))
 
-for urinish in range(3) :
-    urinish = input('parolni kiriting :')
-    if parol == urinish :
+max_ball = num
 
-        print('topdingiz ')
-        break 
-    else :
-        print('yana urinib koring :')
-else :
-    print('bloklandiz ')
+for i in range(2,5+1):
+    num = int(input(f'son  {i}:'))
+  
+    if num > max_ball:
+        max_ball = num
+
+print(max_ball)
